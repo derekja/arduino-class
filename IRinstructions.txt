@@ -1,0 +1,24 @@
+1) close all arduino instances
+2) copy the IRremote directory to your libraries folder
+3) copy the IRtest directory to your arduino projects folder
+4) open the IRtest project
+5) build and upload
+6) connect pin 11 to the side of the receiver marked "S"
+7) connect ground to the far side of the receiver
+8) connect power to the middle, +5V
+9) remove the plastic from the remote control battery
+10) open the serial monitor and make sure the speeds match the project (115200 if you haven't changed it)
+11) press a button on the remote
+
+If you're this far, great!
+
+next challenge:
+
+if the "1" key is pressed, turn on the built in LED on pin 13
+if the "2" key is pressed turn it off
+ignore any other keypress
+
+advanced challenge:
+
+hook up the servo like we did last week
+use the left arrow and right arrow to change the servo position
