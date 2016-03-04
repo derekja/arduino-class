@@ -1,0 +1,22 @@
+1) close all arduino instances
+2) copy the DFPlayer-Mini-mp3 directory to your libraries folder
+3) copy the mp3demo1 directory to your arduino projects folder
+4) open the mp3demo1 project
+5) build and upload
+6) wire the circuit up per mp3.jpg (you'll need to solder on a couple leads to your speaker)
+7) copy the mp3 folder to your SD card (keep them in the mp3 directory. I have an SD reader if you want to bring me your SD card)
+8) put the SD card into the MP3 module
+
+If you're this far, great!
+
+next challenge:
+
+put the remote into the mix
+if the "1" key is pressed, turn on the first track
+if the "2" key is pressed turn on the second track
+ignore any other keypress
+
+advanced challenge:
+
+make the volume keys turn the volume up and down
+
