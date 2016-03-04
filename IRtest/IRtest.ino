@@ -1,13 +1,13 @@
 #include <IRremote.h>
 
-int RECV_PIN = 11;
+int RECV_PIN = 13;
 
 IRrecv irrecv(RECV_PIN);
 decode_results results;
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(115200);
+  Serial.begin(9600);
     Serial.println("start");
   irrecv.enableIRIn(); // Start the receiver
   Serial.println("initdone");

@@ -1,0 +1,7 @@
+1 - FF6897
+2 - FF9867
+3 - FFB04F
+4 - FF30CF
+up - FF629D
+down - FFA857
+

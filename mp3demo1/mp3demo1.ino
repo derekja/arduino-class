@@ -1,22 +1,28 @@
 #include <SoftwareSerial.h>
-#include <dfplayer_mini_mp3.h>
+#include <DFPlayer_Mini_Mp3.h>
+
+SoftwareSerial MP3Serial(10, 11); // RX, TX
 
 void setup() {
-  // put your setup code here, to run once:
+ 
  Serial.begin (9600);
- mp3_set_serial (11); //set Serial for DFPlayer-mini mp3 module 
+ MP3Serial.begin (9600);
+ mp3_set_serial (MP3Serial); //set Serial for DFPlayer-mini mp3 module 
  mp3_set_volume (10);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
 
-while (digitalRead(8)==LOW) {
-  mp3_play(1);
-  Serial.println("sending");
-}
+
+int i = 0;
+
 while (digitalRead(8)==HIGH) {
-  Serial.println("playing");
+  mp3_play(1);
+  i++;
+  Serial.print("sending ");
+  Serial.println(i);
 }
+
+delay(500);
 
 }
